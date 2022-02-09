@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+     .note {
+         color: red;
+     }
+     .error {
+         color: blue;
+     }
+     .note.error {
+         color: brown;
+     }
+     #head3 {
+         color: aqua;
+     }
+
+    </style>
+</head>
+<body>
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Aliquid, voluptatibus itaque.</h1>
+
+     <h1 id="head3" class="note error">Lorem, ipsum dolor.</h1>
+     <h1 id="head4" class="note error">Assumenda, maxime dolor!</h1>
+
+
+
+    <p>css는 최종에 적은게 적용됨
+        두개 섞인거는 두개 섞인게 먼저
+        그 위가 idcss
+    </p>
+    <p>같은 값 note error 같은 클래스 클래스는 최종적으로 작성된 것이
+        그다음 높은것은 아이디
+        가장낮은게 엘레먼트 셀렉트
+    </p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            color: blue;
+        }
+        .note{
+            text-decoration: underline;
+        }
+        .error{
+            text-decoration: line-through;
+        }
+        #head3{
+            font-size: 3em;
+        }
+        .note.error{
+          color: red;
+        }
+        p.note{
+          font-family: d2coding, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Error, id nulla?</h1>
+    <h1 id="head3" class="note">Consequuntur, temporibus illo.</h1>
+
+    <h1 id="head4" class="error">Lorem, ipsum dolor.</h1>
+    <h1 id="head5" class="error">Libero, ab assumenda!</h1>
+    <h1 id="head6" class="error">Harum, voluptatum sapiente!</h1>
+
+    <h1 id="head7" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head8" class="note error">Blanditiis, recusandae aut?</h1>
+
+    <p>스타일에 css붙혀서 쓰면 두개 다 적용</p>
+    <p class="note">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ad, quod ea veritatis ab perferendis ducimus voluptatem tempore, velit delectus modi temporibus quaerat maiores hic minima omnis. Repellat, pariatur rerum.</p>
+    <p class="note">Voluptatibus ipsam suscipit ipsum placeat aliquid nisi quas enim praesentium. Facere nemo officiis repudiandae. Doloribus velit molestiae ea nostrum voluptates quaerat labore optio iste doloremque, minus explicabo deserunt dicta sit!</p>
+
+     <p>7,8번의 경우 두 개의 엘레멘트가 선택되고 여러 선택자를 선택
+         같은css프로퍼티를 사용하는 경우 어느게 적용 되느냐
+     </p>
+</body>
+</html>

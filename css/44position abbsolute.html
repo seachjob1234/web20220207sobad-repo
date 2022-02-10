@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+           .parent{
+               border: 2px solid blue;
+               width: 500px;
+               height: 1000px;
+              position: relative;
+              left: 25px;
+              
+           }
+           .parent > div {
+               border: 3px double chocolate;
+               width: 250px;
+               height: 200px;
+               font-size: 2em;
+               text-align: center;
+           }
+   #ex2 {
+       position: absolute; /*상위 요소 중 static이 아닌 요소 기준*/
+         top: 30px;
+        left: 50px;
+        border-color: darkblue;
+   }
+
+    </style>
+</head>
+<body>
+
+    
+  <div class="parent">
+      <div id="ex11">1</div>
+      <div id="ex12">2</div>
+      <div id="ex13">3</div>
+      <div id="ex14">4</div>
+      <div id="ex15">5</div>
+  </div>
+
+</body>
+</html>

@@ -10,22 +10,21 @@
 </head>
 <body>
     <input type="text" id="input1">
-    <button id="button1">투표 확인 가능</button>
-    <p id="result1"></p>
-
-
-
+    <p id="para1"></p>
+    <button id="button1">성별확인</button>
     <script>
-    document.querySelector("#button1").onclick = function(){
-    let age = document.querySelector("#input1").value;
-    age = Number(age);
-
-    let messege = (age >= 20) ?"투표 가능합니다." :"투표 불가능 합니다"; 
-    document.querySelector("#result1").innerHTML = messege ;
-    }
-       
-
-
+    document.querySelector("#button1").onclick = function() {
+       let ssn =document.querySelector("#input1").value;
+       let g = ssn.slice(6,7);
+     
+       if((g == "1") || (g =="3")) {
+           document.querySelector("#para1").innerHTML ="남자";   
+       } else if ((g == "2") || (g =="4")) {
+           document.querySelector("#para1").innerHTML ="여자";
+       }else{
+           document.querySelector("#para1").innerHTML = "잘못입력";
+       }
+    }   
 
 
     </script>

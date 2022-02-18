@@ -9,23 +9,41 @@
     </style>
 </head>
 <body>
-    <input type="text" id="input1">
-    <button id="button1">투표 확인 가능</button>
-    <p id="result1"></p>
-
-
-
     <script>
-    document.querySelector("#button1").onclick = function(){
-    let age = document.querySelector("#input1").value;
-    age = Number(age);
-
-    let messege = (age >= 20) ?"투표 가능합니다." :"투표 불가능 합니다"; 
-    document.querySelector("#result1").innerHTML = messege ;
-    }
-       
 
 
+
+        let arr1 = ["jin", "jimin", "rm", "v"];
+        for(let i = 0; i<arr1.length; i++ ){
+       console.log(arr1[i]);
+ 
+
+       //for...of
+       for (let item of arr1){
+           console.log(item);
+       }
+        }
+let arr2 =[3,7,2,1,0,99,2]
+let sum = 0;
+for(let item of arr2){
+   sum += item;
+    console.log(sum);
+}
+
+//arr1의 모든 문자열 연결해서 출력
+str = ""
+for(let item of arr1){
+   str =str + item;
+}
+ console.log(str);
+sun =0;
+ let arr3=[[6, 5, 1, 2], [0, 1, 2 ], [9, 3, 4]];
+for(let item1 of arr3){
+ for(let item of item1 ){
+ sun += item;
+ }
+}
+console.log(sun);
 
 
     </script>

@@ -9,23 +9,16 @@
     </style>
 </head>
 <body>
-    <input type="text" id="input1">
-    <button id="button1">투표 확인 가능</button>
-    <p id="result1"></p>
-
-
-
     <script>
-    document.querySelector("#button1").onclick = function(){
-    let age = document.querySelector("#input1").value;
-    age = Number(age);
+  let str1 = "java"
 
-    let messege = (age >= 20) ?"투표 가능합니다." :"투표 불가능 합니다"; 
-    document.querySelector("#result1").innerHTML = messege ;
-    }
-       
+  let array1 = str1.split("");
 
-
+  
+  console.log(array1[0]);
+  console.log(array1[1]);
+  console.log(array1[2]);
+  console.log(array1[3]);
 
 
     </script>

@@ -9,23 +9,46 @@
     </style>
 </head>
 <body>
-    <input type="text" id="input1">
-    <button id="button1">투표 확인 가능</button>
-    <p id="result1"></p>
-
-
+    
 
     <script>
-    document.querySelector("#button1").onclick = function(){
-    let age = document.querySelector("#input1").value;
-    age = Number(age);
+  let arr1 = ["java", "computer", "cpu", "ram", "mouse", "key"];
+  console.log(arr1[0]);
+  console.log(arr1[1]);
+  console.log(arr1[2]);
+  console.log(arr1[3]);
+  console.log(arr1[4]);
+  console.log(arr1[5]);
+  //for:반복문(loop)
+  //():3개 명령문 작성
+  //1번 초기값
+  //2번 실행조건
+  //3번 증감명령문
 
-    let messege = (age >= 20) ?"투표 가능합니다." :"투표 불가능 합니다"; 
-    document.querySelector("#result1").innerHTML = messege ;
-    }
-       
+//실행순서
+//1번->2번 true -> 코드블럭 -> 3번 -> 2번 -> false ->종료
+for(let i = 0 ;i < 3 ;i++ ) {
 
+console.log(1);
 
+}
+
+console.log(2);
+//연습
+for(let i = 0; i<5; i++){
+    console.log("def");
+}
+// 
+for(let i = 0; i<7; i++){
+    console.log("def");
+}
+for(let i = 0; i<10; i++){
+    console.log("korean");
+}
+//2번 명령문 작성해서 5번 서울이 반복되도록
+for(let i = 1;i <6;i++){
+    console.log("seoul");
+}
 
 
     </script>

@@ -10,22 +10,25 @@
 </head>
 <body>
     <input type="text" id="input1">
-    <button id="button1">투표 확인 가능</button>
-    <p id="result1"></p>
-
-
+    <p id="para1"></p>
+    <input type="text" id="input2">
+    <p id="para2"></p>
 
     <script>
-    document.querySelector("#button1").onclick = function(){
-    let age = document.querySelector("#input1").value;
-    age = Number(age);
+    document.querySelector("#input1").onkeyup = function(){
+    let val = this.value;
+    console.log(val);
 
-    let messege = (age >= 20) ?"투표 가능합니다." :"투표 불가능 합니다"; 
-    document.querySelector("#result1").innerHTML = messege ;
+     document.querySelector("#para1").innerHTML =val.length;
     }
-       
-
-
+    document.querySelector("#input2").onkeyup = function(){
+        let val =this.value;
+        if(val.length <= 3){
+            document.querySelector("#para2").innerHTML = "좀 더 길게 작성하세요"
+        }else{
+            document.querySelector("#para2").innerHTML = "충분한 길이입니다"
+        }
+    }
 
 
     </script>

@@ -9,23 +9,23 @@
     </style>
 </head>
 <body>
-    
-
     <script>
-        // 9~0 출력 되도록 while 사용해서 작성
-        let i = 9;
+   let x = 1;
+   switch(x){
+       case 1:
+       console.log("x는 1");
+       break;
+     case 2:
+     console.log("x는 2");
+     break;
+     default:
+     console.log("모든 case의 값과 일치하지 않음");
+     break; //디폴트의 순서는 상관없어.
+   }
 
-        while (i >= 0) {
-            console.log(i);
-            i--;
-        }
 
-        // 8, 6, 4, 2, 0 출력 되도록 while 사용해서 작성
-        i = 8;
-        while (i >= 0) {
-            console.log(i);
-            i -= 2;
-        }
+
+
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
